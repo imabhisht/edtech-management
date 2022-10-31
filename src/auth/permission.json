@@ -1,0 +1,48 @@
+{
+    "/user":{
+        "scopes":{
+            "GET": ["user-get"],
+            "POST":[]
+        },
+        "/signup":{
+            "scopes":{
+                "GET": [],
+                "POST":[]
+            }
+        },
+        "/signin":{
+            "scopes":{
+                "GET": [],
+                "POST":[]
+            }
+        },
+        "/*":{
+            "scopes":{
+                "GET": ["user-get"],
+                "POST":[]
+            }
+        }
+    },
+    "/role":{
+        "scopes": {
+            "GET":["role-get"]
+        }
+    },
+    "/school":{
+        "scopes":{
+            "GET": ["school-get"],
+            "POST":["school-create"]
+        },
+        "/student":{
+            "scopes":{
+                "GET": ["school-students"]
+            }
+        }
+    },
+    "/student":{
+        "scopes":{
+            "GET": ["student-get"],
+            "POST":["student-create"]
+        }
+    }
+}
